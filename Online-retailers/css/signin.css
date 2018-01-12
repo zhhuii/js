@@ -1,0 +1,104 @@
+body,h1,h2,h3,p,input,ul,li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 0;
+	outline: none;
+}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-size: .16rem;
+	margin-bottom: 0.2rem;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.search{
+	width: 100%;
+	height: .71rem;
+	background-color: white;
+	border-bottom: .01rem solid #dedede;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-around;
+
+}
+.search .sea_left{
+	font-size: 0.4rem;
+	line-height: .71rem;
+	margin-left: .15rem;
+}
+.search .sea_center{
+	font-size: 0.32rem;
+	margin: 0 auto;
+	line-height: .71rem;
+	font-weight: bold;
+}
+.search .sea_right{
+	font-size: 0.3rem;
+	line-height: .71rem;
+	margin-right: 0.25rem;
+	font-weight: bold;
+}
+.search .sea_left a,.search .sea_right a{
+	color: #333;
+}
+.biaodan{
+	padding: 0 .9rem;
+	margin-top: 1.2rem;
+	overflow: hidden;
+}
+.biaodan .title{
+	font-size: .28rem;
+	color: #333;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: .6rem;
+}
+[name=username]{
+	display: block;
+	width: 5.7rem;
+	height: .4rem;
+	margin-bottom: .5rem;
+	border-bottom: 1px solid #AAAAAA;
+}
+[name=usernamel]{
+	display: block;
+	width: 4.2rem;
+	height: .4rem;
+	margin-bottom: .5rem;
+	border-bottom: 1px solid #AAAAAA;
+	float: left;
+}
+[name=button]{
+	width: 1.4rem;
+	height: .5rem;
+	background-color: #FA2B5C;
+	border-radius: .06rem;
+	color: #F3F3F3;
+	font-size: .18rem;
+	margin-bottom: .2rem;
+	margin-top: -.1rem;
+	float: right;
+}
+[name=anniu]{
+	width: 5.7rem;
+	height: .7rem;
+	background-color: #FA2B5C;
+	border-radius: .1rem;
+	color: #F3F3F3;
+	font-size: .3rem;
+	margin-bottom: .2rem;
+}
+.biaodan .zhuce{
+	font-size: .18rem;
+	color: #333;
+}
+.biaodan .zhuce a{
+	color: #FA2B5C;
+}

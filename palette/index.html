@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Palette</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_517772_7ojw0uhsrvu6jemi.css">
+	<script src="palette.js"></script>
+</head>
+<body>
+	<header>
+		<ul class="operate">
+			<li id="newc" class="iconfont">&#xe6a2;</li>
+			<li><a href="" class="iconfont">&#xe617;</a></li>
+			<li id="revocation">撤销</li>
+			<li id="clear" class="iconfont">&#xe61a;</li>
+		</ul>
+		<ul class="tool">
+			<li id="word"><i class="iconfont">&#xe61b;</i></li>
+			<li id="clipBtn"><i class="iconfont">&#xe63e;</i></li>
+			<li id="eraser"><i class="iconfont">&#xe647;</i></li>
+			<li id="pencil"><i class="iconfont">&#xe693;</i></li>
+		</ul>
+		<ul class="shape">
+			<li id="line"><i class="iconfont">&#xe60b;</i></li>
+			<li id="dotted"><i class="iconfont">&#xe62e;</i></li>
+			<li id="rect"><i class="iconfont">&#xe603;</i></li>
+			<li id="circle"><i class="iconfont">&#xe608;</i></li>
+			<li id="poly"><i class="iconfont">&#xe604;</i></li>
+			<li id="polygon"><i class="iconfont">&#xe881;</i></li>
+		</ul>
+		<ul class="style">
+			<li class="styleBtn" id="stroke">描边</li>
+            <li class="styleBtn"  id="fill">填充</li>
+            <li><i class="iconfont">线宽</i></li>
+            <li><input  id="strokeStyle" type="color"></li>
+            <li><input id="fillStyle" type="color"></li>
+            <li><input id="lineWidth" type="number"></li>
+		</ul>
+	</header>
+	<section>
+		<!-- <canvas width="800" height="500"></canvas> -->
+		<div class="mask"></div>
+		<div class="opacity"></div>
+		<div class="clip"></div>
+	</section>
+</body>
+</html>
+	<script src="index.js"></script>

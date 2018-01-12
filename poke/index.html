@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            list-style: none;
+        }
+        html , body{
+            width: 100%;
+            height: 100%;
+            background: url("img/timg%20(1).jpg") center/cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        table{
+            width:1200px;
+            height:800px;
+            background: rgba(0,20,0,0.2);
+            position: absolute;
+            left:0;
+            right:0;
+            margin:0 auto;
+            margin-top: 50px;
+        }
+        .hot{
+            width:92px;
+            height: 140px;
+            background: #ffffff;
+            position: absolute;
+            left:555px;
+            opacity: 0;
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+        }
+        .active{
+            outline: 3px solid #2fa0ec;
+        }
+        button{
+            width:80px;
+            height:50px;
+            position: absolute;
+            bottom:100px;
+            background: #2fa8ec;
+            border: none;
+            color: #ffffff;
+            font-size: 25px;
+        }
+        .rightBtn{
+            left: 750px;
+        }
+        .leftBtn{
+            left:650px;
+        }
+    </style>
+</head>
+<body>
+<table></table>
+<button class="leftBtn"> &lt;</button>
+<button class="rightBtn"> &gt;</button>
+</body>
+</html>
+<script>
+    let poke = [];
+    colorarr = ['a','d','s','h'];
+    let flag ={};
+    let now = [];
+    let table = $('table');
+    for(let i =0;i<52;i++){
+        let obj = {};
+        let color = colorarr[Math.floor(Math.random()*4)],
+                num = Math.floor(Math.random()*13+1);
+        do{
+            color = colorarr[Math.floor(Math.random()*4)];
+            num = Math.floor(Math.random()*13+1);
+        }while(flag[color+'_'+num])
+        poke.push({color,num})
+        flag[color+'_'+num] = true;
+    }
+//    while (poke.length<52){
+//        let obj = {};
+//        let color = colorarr[Math.floor(Math.random()*4)],
+//                num = Math.floor(Math.random()*13+1);
+//        if(!flag[color+'_'+num]){
+//            poke.push({color,num})
+//        flag[color+'_'+num] = true;
+//        }
+//    }
+
+    let index = 0;
+    for(let i = 0;i< 8;i++){
+        for(let j = 0;j < i;j++){
+            let divs = $('<div>');
+            let left = 555 -50*i +100*j,
+                    top = 60 * i;
+            divs.addClass('hot')
+                    .attr('id',`${i}_${j}`)
+                    .data('num',poke[index].num)
+                    .css({'backgroundImage':`url(img/${poke[index]['color']}${poke[index]['num']}.JPG)`})
+                    .appendTo('table').delay(80*index).animate({left,top,opacity:1});
+            index++;
+        }
+    }
+    for(;index < poke.length;index++){
+        let divs = $('<div>');
+        divs.addClass('hot')
+                .addClass('left')
+                .attr('id','-2_-2')
+                .data('num',poke[index].num)
+                .css({'backgroundImage':`url(img/${poke[index]['color']}${poke[index]['num']}.JPG)`})
+                .appendTo('table').delay(index*80).animate({left:0,bottom:0,opacity:1});
+    }
+    let first = null;
+    table.on('click','.hot',function(){
+        let coords = $(this).attr('id').split('_');
+        if($(`#${coords[0]*1+1}_${coords[1]*1}`).length || $(`#${coords[0]*1+1}_${coords[1]*1+1}`).length){
+            return;
+        }
+        if($(this).hasClass('active')){
+            $(this).animate({top:'+=20'})
+        }else{
+            $(this).animate({top:'-=20'})
+        }
+        $(this).toggleClass('active');
+        if(!first){
+            first = $(this);
+        }else{
+            if(first.data('num')+$(this).data('num') == 14){
+                $('.active').animate({top:0,left:1108},function(){
+                    $(this).remove();
+                })
+            }else{
+                $('.active').animate({top:'+=20'}).removeClass('active');
+            }
+            first = null;
+        }
+    })
+    let leftBtn = $('.leftBtn'),
+        rightBtn = $('.rightBtn'),
+        rindex = 0;
+   // rightBtn.on('click',function(){
+   //     rindex++;
+   //     $('.left').stop();
+   //     if(!$('.left').length){
+   //         return;
+   //     }
+   //     let num = 600 + rindex*25;
+   //     $('.left').last().css({zIndex:rindex}).animate({left:num}).removeClass('left').addClass('right');
+   // })
+    rightBtn.on('click',function(){
+        rindex++;
+        if(!$('.left').length){
+            return;
+        }
+        $('.left').last().css({zIndex:rindex}).removeClass('left').addClass('right').animate({left:1000});
+//        获取上一个的zindex，css里传一个回掉函数，return 第一个right的css('zIndex')*1+1
+    });
+   // leftBtn.on('click',function(){
+   //     rindex++;
+   //     $('.right').stop();
+   //  dex},function(){
+   //         $(this).removeClass('right').addClass('left')
+   //     });
+   // });
+    leftBtn.on('click',function(){
+        if(!$('.right').length){
+            return;
+        }
+        $('.right').each(function(index,value){
+            $(this).delay(index*60).removeClass('right').addClass('left').animate({left:0,zIndex:index+1});
+        })
+        rindex = 0;
+    });
+</script>

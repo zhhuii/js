@@ -1,0 +1,240 @@
+body,h1,h2,h3,p,input,ul,li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	outline: none;
+}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-size: .16rem;
+	background-color: #F3F3F3;
+	margin-bottom: 0.7rem;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.head{
+	width: 7.18rem;
+	height: 2.5rem;
+	background-color: #FF5D74;
+	padding: .2rem .16rem 0;
+}
+.head .shezhip{
+	width: .34rem;
+	height: .34rem;
+	float: left;
+}
+.head .sea_myp{
+	width: .34rem;
+	height: .34rem;
+	float: right;
+}
+.head .shezhip img,.head .sea_myp img{
+	width: .34rem;
+	height: .34rem;
+}
+.head .ren_waiquan{
+	width: 1.02rem;
+	height: 1.02rem;
+	background-color: #ff8d9d;
+	border-radius: 50%;
+	margin: 0.6rem auto 0;
+	overflow: hidden;
+}
+.head .ren_waiquan .renw_neiquan{
+	width: .93rem;
+	height: .93rem;
+	border-radius: 50%;
+	background-color: #f3f3f3;
+	margin: 0.04rem;
+	text-align: center;
+	line-height: .93rem;
+	font-size: .6rem;
+	color: #E8E8E8;
+}
+.head .head_denglu{
+	width: .95rem;
+	height: .44rem;
+	background-color: #FEECF2;
+	border-radius: .44rem;
+	margin-top: .23rem;
+	margin-left: 2.43rem;
+	float: left;
+	font-size: 0.2rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: .44rem;
+}
+.head .head_denglu a,.head .head_zhuce a{
+	display: block;
+	width: .95rem;
+	height: .44rem;
+	border-radius: .44rem;
+	color: #333;
+}
+.head .head_zhuce{
+	width: .95rem;
+	height: .44rem;
+	background-color: #FEECF2;
+	border-radius: .44rem;
+	margin-top: .23rem;
+	margin-right: 2.43rem;
+	float: right;
+	font-size: 0.2rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: .44rem;
+}
+.gwh{
+	width: 100%;
+	height: 1.29rem;
+	background-color: white;
+	margin-bottom: .11rem;
+	padding-top: .16rem;
+}
+.gwh .gouwuche,.gwh .wodeshoucang{
+	width: 33%;
+	float: left;
+}
+.gwh .hongbao{
+	width: 33%;
+	float: right;
+}
+.gwh .gwh_z{
+	width: .74rem;
+	height: .74rem;
+	border-radius: 50%;
+	margin-bottom: .2rem;
+}
+.gwh .gouwuche .gwh_gou{
+	background-color: #7BDDDE;
+	margin-left: .68rem;
+	text-align: center;
+	line-height: .74rem;
+	color: white;
+	font-size: .36rem;
+}
+.gwh .gouwuche .gwh_con{
+	font-size: .18rem;
+	text-align: center;
+	margin-left: -.4rem;
+	color: #666;
+}
+.gwh .wodeshoucang .gwh_my{
+	background-color: #FFDA57;
+	margin: auto;
+	margin-bottom: .2rem;
+	text-align: center;
+	line-height: .74rem;
+	color: white;
+	font-size: .36rem;
+}
+.gwh .wodeshoucang .gwh_con{
+	font-size: .18rem;
+	color: #666;
+	text-align: center;
+}
+.gwh .hongbao .gwh_bao{
+	background-color: #FF8C92;
+	margin-left: 1.04rem;
+	text-align: center;
+	line-height: .74rem;
+	color: white;
+	font-size: .36rem;
+}
+.gwh .hongbao .gwh_con{
+	font-size: .18rem;
+	color: #666;
+	text-align: center;
+	margin-left: .3rem;
+}
+.alllist{
+	width: 100%;
+	height: .66rem;
+	background-color: white;
+}
+.alllistb{
+	margin-bottom: .12rem;
+}
+.alllist .qbdd_text{
+	line-height: .66rem;
+	font-size: .18rem;
+	color: #333;
+	margin-left: .19rem;
+	float: left;
+	font-weight: bold;
+}
+.alllist .qbdd_jian{
+	float: right;
+	margin-right: .18rem;
+	line-height: .66rem;
+	color: #B9B9B9;
+}
+.alll_hb{
+	width: 100%;
+	height: 0.02rem;
+	background-color: white;
+}
+.alll_hb .alll_huixian{
+	width: 7.14rem;
+	height: 0.02rem;
+	background-color: #E0E0E0;
+	margin: 0 auto;
+}
+
+
+
+
+
+.bottom{
+	width: 7.5rem;
+	height: 0.80rem;
+	background-color: #F9F9F9;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+.bottom .bo_normal{
+	width: .48rem;
+	height: .38rem;
+	margin-top: 0.1rem;
+	background-size: .44rem .38rem;
+	background-repeat: no-repeat;
+}
+.bottom .bo_shouyeh{
+	background-image: url('../img/bo_shouyen.png');
+}
+.bottom .bo_fenlei{
+	background-image: url('../img/bo_fenlei.png');
+}
+.bottom .bo_ludao{
+	background-image: url('../img/bo_ludao.png');
+}
+.bottom .bo_gouwuche{
+	background-image: url('../img/bo_gouwuche.png');
+}
+.bottom .bo_wode{
+	background-image: url('../img/bo_wodel.png');
+}
+.bottom .bo_normal .bon_s{
+	font-size: .14rem;
+	text-align: center;
+	margin-top: .38rem;
+}
+.bottom .bo_normal .bon_s a{
+	color: #666;
+}
+.bottom .bo_wode .bons_w a{
+	color: #fa3765;
+}
+.bottom .bo_shouyeh .bons_s,.bottom .bo_fenlei .bons_f{
+	margin-left: -.05rem;
+}
+.bottom .bo_ludao .bons_l,.bottom .bo_gouwuche .bons_g,.bottom .bo_wode .bons_w{
+	margin-left: -.03rem;
+}

@@ -1,0 +1,112 @@
+body,h1,h2,h3,p,input,ul,li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 0;
+	outline: none;
+}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-size: .16rem;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.head_back{
+	width: 100%;
+	height: 2.5rem;
+	background-image: url('../img/login.png');
+	background-size: 100% 2.5rem;
+	background-repeat: no-repeat;
+}
+.head_back .headb_cha{
+	float: right;
+	color: #888888;
+	margin-top: .36rem;
+	margin-right: .42rem;
+}
+.logo{
+	width: 0.9rem;
+	height: 0.9rem;
+	border-radius: .16rem;
+	background-image: url('../img/logo.png');
+	background-size: 0.9rem 0.9rem;
+	background-repeat: no-repeat;
+	margin: -0.95rem auto 0;
+}
+.biaodan{
+	padding: 0 .9rem;
+	margin-top: .5rem;
+	overflow: hidden;
+}
+[name=username]{
+	display: block;
+	width: 5.7rem;
+	height: .4rem;
+	margin-bottom: .5rem;
+	border-bottom: 1px solid #AAAAAA;
+}
+[name=password]{
+	display: block;
+	width: 5.7rem;
+	height: .4rem;
+	border-bottom: 1px solid #AAAAAA;
+}
+.biaodan .forget a{
+	color: #AAAAAA;
+	margin-top: .5rem;
+	margin-bottom: .66rem;
+	float: right;
+	font-size: .24rem;
+}
+[name=anniu]{
+	width: 5.7rem;
+	height: .7rem;
+	background-color: #FA2B5C;
+	border-radius: .1rem;
+	color: #F3F3F3;
+	font-size: .3rem;
+	margin-bottom: .6rem;
+}
+.biaodan .zhuce{
+	font-size: .3rem;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 4.78rem;
+}
+.biaodan .zhuce a{
+	color: #333;
+}
+.biaodan .OR .left{
+	width: 2.56rem;
+	height: 0.02rem;
+	background-color: #DDDDDD;
+	float: left;
+}
+.biaodan .OR{
+	width: 5.7rem;
+	height: .2rem;
+}
+.biaodan .OR .or{
+	font-size: .18rem;
+	float: left;
+	text-align: center;
+	margin-left: 0.2rem;
+	margin-top: -0.08rem;
+	color: #AAAAAA;
+}
+.biaodan .OR .right{
+	width: 2.56rem;
+	height: 0.02rem;
+	background-color: #DDDDDD;
+	float: right;
+}
+.biaodan .three{
+	margin-top: .35rem;
+	font-size: .2rem;
+	color: #aaaaaa;
+	text-align: center;
+}

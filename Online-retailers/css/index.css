@@ -1,0 +1,355 @@
+body,h1,h2,h3,p,input,ul,li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	outline: none;
+}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-size: .16rem;
+	margin-bottom: 0.7rem;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.search{
+	width: 100%;
+	height: .71rem;
+	background-color: white;
+	border-bottom: .01rem solid #dedede;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.search .sea_text{
+	display: block;
+	width: 6.64rem;
+	height: .45rem;
+	background-color: #f7f7f7;
+	border-radius: 0.3rem;
+	border: 1px solid transparent;
+	float: left;
+	background-image: url('../img/search.png');
+	background-repeat: no-repeat;
+	background-size: .29rem .30rem;
+	background-position: .15rem .08rem;
+	position: absolute;
+	top: 0.13rem;
+	left: .18rem;
+}
+.search .sea_my{
+	width: 0.33rem;
+	height: 0.32rem;
+	background-image: url('../img/sea_my.png');
+	background-size: .33rem .32rem;
+	float: right;
+	margin-top: .07rem;
+	position: absolute;
+	right: .17rem;
+	top: 50%;
+	margin-top: -.16rem;
+}
+
+.banner{
+	width: 100%;
+	height: 2.69rem;
+	margin-top: .71rem;
+	position: relative;
+	overflow: hidden;
+}
+.banner .banner_father{
+	width: 37.5rem;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.banner_father > a{
+	display: block;
+	float: left;
+	width: 7.5rem;
+	height: 100%;
+}
+.banner .banner_son{
+	width: 7.5rem;
+	height: 2.69rem;
+	float: left;
+}
+.banner dl{
+	width: 1.5rem;
+	position: absolute;
+	top: 2.2rem;
+	left: 50%;
+	/*right: 0;*/
+	margin-left: -0.75rem;
+
+}
+.banner dl dd{
+	width: 0.2rem;
+	height:0.2rem;
+	margin: 0 0.05rem;
+	background-color: white;
+	border-radius: 50%;
+	float: left;
+}
+.banner dl .active{
+	background-color: #FA2B5C;
+}
+
+.navz{
+	width: 100%;
+	height: 1.04rem;
+	overflow: hidden;
+	position: relative;
+}
+.navz .nav{
+	width: 11.69rem;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.navz .nav .nav_quan{
+	display: block;
+	width: .86rem;
+	height: .74rem;
+	margin-top: .04rem;
+	text-align: center;
+	color: #363636;
+}
+.navz .nav .nav_quan img{
+	width: .86rem;
+	height: .74rem;
+}
+
+.newpeople{
+	width: 100%;
+	height: 2.44rem;
+	background-color: #f3f3f3;
+	padding-top: .18rem;
+}
+.newpeople a img{
+	width: 100%;
+	height: 2.08rem;
+}
+
+.ribao{
+	width: 100%;
+	height: 3.58rem;
+}
+.ribao a img{
+	width: 7.5rem;
+	height: 3.58rem;
+}
+
+.nav2{
+	width: 7.5rem;
+	height: 3.96rem;
+	background-image: url('../img/nav2.png');
+	background-size: 7.5rem 4.09rem;
+	padding-top: .13rem;
+}
+.nav2 .nav2_tuz{
+	width: 7.26rem;
+	height: 3.9rem;
+	margin: 0 auto;
+	border-radius: .1rem;
+}
+.nav2 .nav2_tuz .nav_tu{
+	width: 1.74rem;
+	height: 1.9rem;
+	background-color: white;
+	float: left;
+	margin-right: .1rem;
+	margin-bottom: .1rem;
+	border-radius: .1rem;
+}
+.nav2 .nav2_tuz .nav_tu:nth-child(4),.nav2 .nav2_tuz .nav_tu:nth-child(8){
+	margin-right: 0;
+}
+.nav2 .nav2_tuz .nav_tu a{
+	display: block;
+	font-size: .28rem;
+	color: red;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0.15rem;
+}
+.nav2 .nav2_tuz .nav_tu a img{
+	width: 1.73rem;
+	height: 1.08rem;
+}
+.nav2 .nav2_tuz .nav_tu a .nav_yjju{
+	width: 1.64rem;
+	height: 0.3rem;
+	margin: 0 auto;
+	border-radius: .15rem;
+	background-color: #ff5984;
+	font-size: .18rem;
+	text-align: center;
+	line-height: 0.3rem;
+	color: white;
+}
+
+.cuxiao{
+	width: 100%;
+	height: 3.84rem;
+	background-color: #f3f3f3;
+	padding-top: .19rem;
+}
+.cuxiao .cux_left{
+	width: 2.96rem;
+	height: 100%;
+	float: left;
+}
+.cuxiao .cux_left img{
+	width: 2.96rem;
+	height: auto;
+}
+.cuxiao .cux_right{
+	width: 4.52rem;
+	height: 100%;
+	float: right;
+}
+.cuxiao .cux_right .cuxr_top{
+	width: 4.52rem;
+	height: 1.69rem;
+}
+.cuxiao .cux_right .cuxr_top img{
+	width: 4.52rem;
+	height: auto;
+}
+.cuxiao .cux_right .cuxr_bottom .cuxrb_left,.cuxiao .cux_right .cuxr_bottom .cuxrb_right{
+	width: 2.25rem;
+	height: 2.13rem;
+	margin-top: 0.03rem;
+	float: left;
+	margin-left: 0.02rem;
+}
+.cuxiao .cux_right .cuxr_bottom .cuxrb_left{
+	margin-left: 0;
+}
+.cuxiao .cux_right .cuxr_bottom .cuxrb_left img,.cuxiao .cux_right .cuxr_bottom .cuxrb_right img{
+	width: 2.25rem;
+	height: auto;
+}
+
+.adv{
+	width: 100%;
+	height: .667rem;
+}
+.adv img{
+	width: 100%;
+	height: auto;
+}
+
+.navthree{
+	width: 7.5rem;
+	height: .81rem;
+	overflow: hidden;
+}
+.navthree .navt_both{
+	width: 10.04rem;
+	height: .46rem;
+	padding-top: .35rem;
+	display: flex;
+	justify-content: space-around;
+}
+.navthree .navt_both .navtb_son{
+	width: auto;
+	height: .34rem;
+	font-size: .24rem;
+	color: #323232;
+	font-weight: bold;
+	border-bottom: 0.03rem solid transparent;
+}
+.navthree .navt_both .navtb_son:hover{
+	color: #f82957;
+	border-bottom-color: #f82957;
+}
+
+.advt_one{
+	width: 7.5rem;
+	height: 3.12rem;
+}
+.advt_one img{
+	width: 7.5rem;
+	height: auto;
+}
+
+.advto_text{
+	width: 7.5rem;
+	height: .51rem;
+	margin-bottom: 0.06rem;
+}
+.advto_text span:first-child{
+	display: block;
+	float: left;
+	color: #333;
+	font-size: .18rem;
+	margin-left: .2rem;
+	line-height: .51rem;
+}
+.advto_text span:last-child{
+	display: block;
+	float: right;
+	color: #ffa44a;
+	font-size: .14rem;
+	margin-right: .16rem;
+	line-height: .51rem;
+}
+
+.bottom{
+	width: 7.5rem;
+	height: 0.80rem;
+	background-color: #F9F9F9;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+.bottom .bo_normal{
+	width: .48rem;
+	height: .38rem;
+	margin-top: 0.1rem;
+	background-size: .44rem .38rem;
+	background-repeat: no-repeat;
+}
+.bottom .bo_shouyeh{
+	background-image: url('../img/bo_shouyeh.png');
+}
+.bottom .bo_fenlei{
+	background-image: url('../img/bo_fenlei.png');
+}
+.bottom .bo_ludao{
+	background-image: url('../img/bo_ludao.png');
+}
+.bottom .bo_gouwuche{
+	background-image: url('../img/bo_gouwuche.png');
+}
+.bottom .bo_wode{
+	background-image: url('../img/bo_wode.png');
+}
+.bottom .bo_normal .bon_s{
+	font-size: .14rem;
+	text-align: center;
+	margin-top: .38rem;
+}
+.bottom .bo_normal .bon_s a{
+	color: #666;
+}
+.bottom .bo_shouyeh .bons_s a{
+	color: #fa3765;
+}
+.bottom .bo_shouyeh .bons_s,.bottom .bo_fenlei .bons_f{
+	margin-left: -.05rem;
+}
+.bottom .bo_ludao .bons_l,.bottom .bo_gouwuche .bons_g,.bottom .bo_wode .bons_w{
+	margin-left: -.03rem;
+}
