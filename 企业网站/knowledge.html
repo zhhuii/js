@@ -55,9 +55,9 @@
 </nav>
 <aside>
     <ul class="aside-left">
-        <li><a href="jingyinjiaolian1.html"><img src="img/zhishi%20%20%20small%20%204.jpg" alt="加载失败"></a>
+        <li><a href="knowledge1.html"><img src="img/zhishi%20%20%20small%20%204.jpg" alt="加载失败"></a>
             <div class="aside-left_1">
-                <p><a href="jingyinjiaolian1.html">史密斯卧推：两种你从未尝试过的卧推训练！</a></p>
+                <p><a href="knowledge1.html">史密斯卧推：两种你从未尝试过的卧推训练！</a></p>
                 <p>史密斯卧推平时一直不怎么受待见，因为轨道的固定让你违背自然的角度和发力轨迹！只是去适应机器而不是真正的学会掌控重量！　　但是今天要介绍两种创新的利用史密斯机来进行的卧推训练。让你的训练更有趣！　　动作一：单手史密斯杠铃卧推！　　一般来说我们用杠铃进行卧推的话都是双手，要哑铃的话可以双手又可以单手！但是如果要用杠铃来进行..</p>
                 <div class="aside-left_11">
                     <p>2017-09-28</p>
@@ -146,3 +146,35 @@
 <!--底部结束-->
 </body>
 </html>
+<script>
+    window.onload = function(){
+        let headxh1=document.querySelector('.headxh1');
+        let headxh2=document.querySelector('.headxh2');
+        let headxh3=document.querySelector('.headxh3');
+        let kecheng=document.querySelector('#kecheng');
+        let about=document.querySelector('#about');
+        let zhishi=document.querySelector('#zhishi');
+        let box = document.querySelectorAll('.nav-img > li');
+        kecheng.onmouseover=function(){
+            headxh1.style.display='block';
+        };
+        kecheng.onmouseout=function(){
+            headxh1.style.display='none';
+        };
+        about.onmouseover=function(){
+            headxh2.style.display='block';
+        };
+        about.onmouseout=function(){
+            headxh2.style.display='none';
+        };
+        zhishi.onmouseover=function(){
+            headxh3.style.display='block';
+        };
+        zhishi.onmouseout=function(){
+            headxh3.style.display='none';
+        };
+        for(let i =1;i <box.length;i++){
+            box[i].style.left = 1810 +'px';
+        }
+    }
+</script>

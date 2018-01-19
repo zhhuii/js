@@ -110,14 +110,14 @@ window.onload=function() {
     });
     zuojiantou.onclick = function () {
         if(flag){
-            lunbo('zuo');
+            lunbo('you');
             flag = false;
         }
 
     };
     youjiantou.onclick = function () {
         if(flag){
-            lunbo('you');
+            lunbo('zuo');
             flag = false;
         }
     };

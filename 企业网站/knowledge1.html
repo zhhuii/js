@@ -122,3 +122,35 @@
 <!--底部结束-->
 </body>
 </html>
+<script>
+    window.onload = function(){
+        let headxh1=document.querySelector('.headxh1');
+        let headxh2=document.querySelector('.headxh2');
+        let headxh3=document.querySelector('.headxh3');
+        let kecheng=document.querySelector('#kecheng');
+        let about=document.querySelector('#about');
+        let zhishi=document.querySelector('#zhishi');
+        let box = document.querySelectorAll('.nav-img > li');
+        kecheng.onmouseover=function(){
+            headxh1.style.display='block';
+        };
+        kecheng.onmouseout=function(){
+            headxh1.style.display='none';
+        };
+        about.onmouseover=function(){
+            headxh2.style.display='block';
+        };
+        about.onmouseout=function(){
+            headxh2.style.display='none';
+        };
+        zhishi.onmouseover=function(){
+            headxh3.style.display='block';
+        };
+        zhishi.onmouseout=function(){
+            headxh3.style.display='none';
+        };
+        for(let i =1;i <box.length;i++){
+            box[i].style.left = 1810 +'px';
+        }
+    }
+</script>
